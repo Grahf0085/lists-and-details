@@ -18,7 +18,7 @@ const CharacterList = ({ characters }) => {
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      _id: PropTypes.string.isRequired,
       allies: PropTypes.array.isRequired,
       enemies: PropTypes.array.isRequired,
       photoUrl: PropTypes.string.isRequired,

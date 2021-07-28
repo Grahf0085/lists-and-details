@@ -4,8 +4,8 @@ import { fetchCharacters } from '../services/tlabAPI';
 
 export default class TheLastAirBenderCharacters extends Component {
   state = {
-    charcters: [],
-    loaidng: true,
+    characters: [],
+    loading: true,
   };
 
   async componentDidMount() {
@@ -14,10 +14,10 @@ export default class TheLastAirBenderCharacters extends Component {
   }
 
   render() {
-    const { charcters, loading } = this.state;
-
+    const { characters, loading } = this.state;
+    console.log(characters);
     if(loading) return <h1>Loading...</h1>;
 
-    return <CharacterList characters={charcters} />;
+    return <CharacterList characters={characters} />;
   }
 }

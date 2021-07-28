@@ -4,7 +4,7 @@ import Character from './Character';
 
 const CharacterList = ({ characters }) => {
   const characterElements = characters.map((character) => (
-    <li key={character.id}>
+    <li key={character._id}>
       <Character
         {...character}
       />

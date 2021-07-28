@@ -1,5 +1,6 @@
 import React from 'react';
+import TheLastAirBenderCharacters from '../../containers/TlabCharacters';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return <TheLastAirBenderCharacters />;
 }

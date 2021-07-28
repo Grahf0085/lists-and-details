@@ -15,7 +15,6 @@ export default class TheLastAirBenderCharacters extends Component {
 
   render() {
     const { characters, loading } = this.state;
-    console.log(characters);
     if(loading) return <h1>Loading...</h1>;
 
     return <CharacterList characters={characters} />;

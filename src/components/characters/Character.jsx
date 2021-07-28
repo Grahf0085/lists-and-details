@@ -14,7 +14,7 @@ const Character = ({ id, photoUrl, name }) => (
   //   </figcaption>
   // </figure>
 
-  <Link to={`/${id}`}>
+  <Link to={`/character/${id}`}>
     <img src={photoUrl} alt={name} />
   </Link>
 

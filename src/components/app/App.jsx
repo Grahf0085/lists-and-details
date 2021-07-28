@@ -12,7 +12,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import CharDetailPage from '../characters/CharacterDetailPage';
+import CharDetailPage from '../../containers/CharDetail';
 import TlabCharacters from '../../containers/TlabCharacters';
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
                   <TlabCharacters {...routerProps} />
                 )}
               />
-              <Route path="/:id"
+              <Route path="/character/:id" exact={true}
                 render={routerProps => (
                   <CharDetailPage {...routerProps} />
                 )}

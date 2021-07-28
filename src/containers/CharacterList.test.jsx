@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import TheLastAirBenderCharacters from './TlabCharacters';
+import TheLastAirBenderCharacters from './CharacterList';
 
 describe('TLAB container', () => {
   it('displays a list of charcters', async () => {

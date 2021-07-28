@@ -13,7 +13,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import CharDetailPage from '../../containers/CharDetail';
-import TlabCharacters from '../../containers/TlabCharacters';
+import TlabCharacters from '../../containers/CharacterList';
 
 class App extends Component {
 

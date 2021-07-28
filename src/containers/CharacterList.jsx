@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import CharacterList from '../components/characters/CharacterList';
-import { fetchCharacters } from '../services/tlabAPI';
+import CharacterList from '../components/characters/CharacterListPage';
+import { fetchCharacters } from '../services/listAPI';
 
 export default class TheLastAirBenderCharacters extends Component {
   state = {

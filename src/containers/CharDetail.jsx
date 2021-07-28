@@ -1,5 +1,6 @@
+/* eslint-disable max-len */
 import React, { Component } from 'react';
-import { fetchCharDetails } from '../services/tlabDetail';
+import { fetchCharDetails } from '../services/detailAPI';
 import CharDetailPage from '../components/characters/CharacterDetailPage';
 import PropTypes from 'prop-types';
 
@@ -22,7 +23,8 @@ export default class TlabDetails extends Component {
 
     if(loading) return <h1>Loading...</h1>;
   
-    return <CharDetailPage name={detailsAPI.name} />;
+    return <CharDetailPage name={detailsAPI.name} gender={detailsAPI.gender} hair={detailsAPI.hair} weapon={detailsAPI.weapon} 
+      profession={detailsAPI.profession} position={detailsAPI.position} affiliation={detailsAPI.affiliation}/>;
   }
 }
 

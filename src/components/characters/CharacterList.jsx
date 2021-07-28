@@ -6,7 +6,12 @@ const CharacterList = ({ characters }) => {
   const characterElements = characters.map((character) => (
     <li key={character._id}>
       <Character
-        {...character}
+        id={character._id}
+        allies={character.allies}
+        enemies={character.enemies}
+        photoUrl={character.photoUrl}
+        name={character.name}
+        affiliation={character.affiliation}
       />
     </li>
   ));

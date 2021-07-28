@@ -14,6 +14,7 @@ import {
 } from 'react-router-dom';
 import CharDetailPage from '../../containers/CharDetail';
 import TlabCharacters from '../../containers/CharacterList';
+import Header from '../characters/Header';
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
+          <Header />
           <main>
             <Switch>
               <Route path="/" exact={true}

@@ -1,17 +1,18 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
+import './CharacterDetailPage.css';
 
 const CharDetailPage = ({ name, gender, hair, weapon, profession, position, affiliation }) => (
 
   <div>
-    <p>{name}</p>
-    <p>{gender}</p>
-    <p>{hair}</p>
-    <p>{weapon}</p>
-    <p>{profession}</p>
-    <p>{position}</p>
-    <p>{affiliation}</p>
+    <p>Name: {name}</p>
+    <p>Gender: {gender}</p>
+    <p>Hair: {hair}</p>
+    <p>Weapon: {weapon}</p>
+    <p>Job: {profession}</p>
+    <p>Position: {position}</p>
+    <p>Party: {affiliation}</p>
   </div>
 
 );

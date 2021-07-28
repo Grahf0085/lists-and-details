@@ -12,8 +12,8 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import CharDetailPage from '../../containers/CharDetail';
-import TlabCharacters from '../../containers/CharacterList';
+import CharDetail from '../../containers/CharDetail';
+import CharacterList from '../../containers/CharacterList';
 import Header from '../characters/Header';
 
 class App extends Component {
@@ -27,12 +27,12 @@ class App extends Component {
             <Switch>
               <Route path="/" exact={true}
                 render={routerProps => (
-                  <TlabCharacters {...routerProps} />
+                  <CharacterList {...routerProps} />
                 )}
               />
               <Route path="/character/:id" exact={true}
                 render={routerProps => (
-                  <CharDetailPage {...routerProps} />
+                  <CharDetail {...routerProps} />
                 )}
               />
 

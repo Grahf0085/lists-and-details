@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character component renders details 1`] = `
+<DocumentFragment>
+  <div
+    role="omg"
+  >
+    <p>
+      Name: Text Character
+    </p>
+    <p>
+      Gender: 983247fdssf
+    </p>
+    <p>
+      Hair: http://image.com/image.png
+    </p>
+    <p>
+      Weapon: Text Character
+    </p>
+    <p>
+      Job: 983247fdssf
+    </p>
+    <p>
+      Position: http://image.com/image.png
+    </p>
+    <p>
+      Party: Text Character
+    </p>
+  </div>
+</DocumentFragment>
+`;

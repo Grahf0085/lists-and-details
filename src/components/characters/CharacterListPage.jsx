@@ -3,25 +3,22 @@ import PropTypes from 'prop-types';
 import Character from './Character';
 import './CharacterListPage.css';
 
-const CharacterList = ({ characters }) => {
+const CharacterListPage = ({ characters }) => {
   const characterElements = characters.map((character) => (
     <li key={character._id}>
       <Character
         id={character._id}
-        allies={character.allies}
-        enemies={character.enemies}
         photoUrl={character.photoUrl}
         name={character.name}
-        affiliation={character.affiliation}
       />
     </li>
   ));
 
-  return <ul>{characterElements}</ul>;
+  return <ul role="list">{characterElements}</ul>;
 
 };
 
-CharacterList.propTypes = {
+CharacterListPage.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
       _id: PropTypes.string.isRequired,
@@ -34,4 +31,4 @@ CharacterList.propTypes = {
   ).isRequired
 };
 
-export default CharacterList;
+export default CharacterListPage;

@@ -5,7 +5,7 @@ import './CharacterDetailPage.css';
 
 const CharDetailPage = ({ name, gender, hair, weapon, profession, position, affiliation }) => (
 
-  <div>
+  <div role="omg">
     <p>Name: {name}</p>
     <p>Gender: {gender}</p>
     <p>Hair: {hair}</p>

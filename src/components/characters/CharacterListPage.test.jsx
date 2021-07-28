@@ -1,14 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Character from './Character';
+import CharacterListPage from './CharacterListPage';
 
 describe('Character component', () => {
-  it('renders Character', () => {
+  it('renders details', () => {
     const { asFragment } = render(
-      <Character
-        name="Text Character"
-        id="983247fdssf"
-        photoUrl="http://image.com/image.png"
+      <CharacterListPage
+        characters="dsfdsf"
       />
     );
 

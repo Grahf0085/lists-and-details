@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import TheLastAirBenderCharacters from './CharacterList';
+import CharacterList from './CharacterList';
 
-describe('TLAB container', () => {
+describe('TLAB list', () => {
   it('displays a list of charcters', async () => {
-    render(<TheLastAirBenderCharacters />);
+    render(<CharacterList />);
 
     screen.getByText('Loading...');
 

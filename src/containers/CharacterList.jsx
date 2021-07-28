@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import CharacterList from '../components/characters/CharacterListPage';
+import CharacterListPage from '../components/characters/CharacterListPage';
 import { fetchCharacters } from '../services/listAPI';
 
-export default class TheLastAirBenderCharacters extends Component {
+export default class CharacterList extends Component {
   state = {
     characters: [],
     loading: true,
@@ -15,8 +15,9 @@ export default class TheLastAirBenderCharacters extends Component {
 
   render() {
     const { characters, loading } = this.state;
+
     if(loading) return <h1>Loading...</h1>;
 
-    return <CharacterList characters={characters} />;
+    return <CharacterListPage characters={characters} />;
   }
 }

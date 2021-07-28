@@ -4,7 +4,7 @@ import { fetchCharDetails } from '../services/detailAPI';
 import CharDetailPage from '../components/characters/CharacterDetailPage';
 import PropTypes from 'prop-types';
 
-export default class TlabDetails extends Component {
+export default class CharDetail extends Component {
   state = {
     detailsAPI: {},
     loading: true
@@ -28,6 +28,6 @@ export default class TlabDetails extends Component {
   }
 }
 
-TlabDetails.propTypes = {
+CharDetail.propTypes = {
   match: PropTypes.object.isRequired
 };

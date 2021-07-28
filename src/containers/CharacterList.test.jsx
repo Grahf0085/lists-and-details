@@ -1,10 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import CharacterList from './CharacterList';
+import { MemoryRouter } from 'react-router-dom';
 
 describe('TLAB list', () => {
   it('displays a list of charcters', async () => {
-    render(<CharacterList />);
+    render(<MemoryRouter> <CharacterList /> </MemoryRouter>);
 
     screen.getByText('Loading...');
 

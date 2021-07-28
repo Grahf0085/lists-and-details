@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import CharDetail from './CharDetail';
 
+
 describe('TLAB detail', () => {
   it('displays character details', async () => {
     render(<CharDetail />);
